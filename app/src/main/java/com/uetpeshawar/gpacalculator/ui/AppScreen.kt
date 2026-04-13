@@ -10,7 +10,7 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material3.Button
-import androidx.compose.material3.Divider
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.ExposedDropdownMenuBox
 import androidx.compose.material3.ExposedDropdownMenuDefaults
@@ -124,7 +124,7 @@ private fun GpaScreen(
                 onCreditHoursChanged = { onCourseCreditHoursChanged(course.id, it) },
                 onGradeChanged = { onCourseGradeChanged(course.id, it) }
             )
-            Divider()
+            HorizontalDivider()
         }
 
         item {
@@ -170,7 +170,7 @@ private fun CgpaScreen(
                 onCreditHoursChanged = { onSemesterCreditHoursChanged(semester.id, it) },
                 onGpaChanged = { onSemesterGpaChanged(semester.id, it) }
             )
-            Divider()
+            HorizontalDivider()
         }
 
         item {
